@@ -1,0 +1,18 @@
+﻿@{    
+    Layout = "_Layout";
+    ViewData["Title"] = "Monedero";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido, @{@ViewBag.Nombre}!</h1>
+</div>
+<br>
+<br>
+<div class="card-deck mb-3 text-center">
+    <div class="card col-md-4 box-shadow mx-auto p-0">
+        <div class="card-header">SALDO DISPONIBLE</div>
+        <div class="card-body">
+            <h1 class="card-title pricing-card-title">$@{@ViewBag.Saldo}</h1>
+        </div>
+    </div>
+</div>
